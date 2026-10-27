@@ -1,0 +1,48 @@
+// ===== Test 1: valid program (sample from the PDF) =====
+class Student {
+    public static void main() {
+        int age = 20;
+        float grade = 85.5;
+        String name = "Ali";
+
+        if (grade >= 50) {
+            grade = grade + 5;
+        }
+    }
+}
+
+// ===== Test 2: comments, booleans, char literal, loops =====
+/* multi-line comment
+   spanning several lines */
+class Test {
+    boolean flag = true;
+    boolean other = false;
+    char c = 'A';
+    int[] arr;
+    void run() {
+        while (flag != false) { return; }
+        for (int i = 0; i <= 10; i = i + 1) { x = x * 2 / 3 % 4; }
+        System.out.println("Hello \"World\"");
+    }
+}
+
+// ===== Test 3: case sensitivity =====
+Class INT True String string
+
+// ===== Test 4: invalid character =====
+int x = 10 @ 5;
+
+// ===== Test 5: invalid identifiers =====
+1name = 5;
+9abc3 = 2;
+12_x = 1;
+total-marks = 3;
+student@id = 4;
+
+// ===== Test 6: unclosed string =====
+String name = "Ali;
+int ok = 1;
+
+// ===== Test 7: unterminated comment (keep this LAST) =====
+/* This comment does not end
+int y = 2;
