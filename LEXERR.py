@@ -575,8 +575,7 @@ def show_results(tokens, errors, symbol_table):
 
 
 if __name__ == "__main__":
-    # Default file is input.txt; you can also run:  python lexer.py other_file.txt
-    file_name = sys.argv[1] if len(sys.argv) > 1 else "input.txt"
+    file_name = sys.argv[1] if len(sys.argv) > 1 else "Test Cases.txt"
     source_code = Path(file_name).read_text(encoding="utf-8")
 
     tokens, errors, symbol_table = tokenize(source_code)
